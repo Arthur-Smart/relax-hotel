@@ -1,0 +1,34 @@
+.meetingDetails{
+    width:100%;
+    height:40vh;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, .9) 45%), url('../../assets/bg-main.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+}
+
+.detail{
+padding:10px;
+width:300px;
+border-right:1px solid white;
+}
+
+.detail:nth-child(3){
+    border-right:none;
+}
+
+@media screen and (max-width:1026px){
+    .meetingDetails{
+        height:auto;
+    }
+}
+
+@media screen and (max-width:640px){
+.detail{
+border-right: none;
+}
+.meetingDetails {
+    height: 80vh;
+}
+}

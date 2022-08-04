@@ -1,0 +1,13 @@
+.socket-container{
+    position:sticky;
+    top:0;
+    z-index:1000; 
+}
+
+@media screen and (max-width:560px){
+    .break{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+}

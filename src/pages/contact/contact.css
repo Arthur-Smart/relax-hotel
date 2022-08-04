@@ -1,0 +1,109 @@
+.contactroot{
+    overflow: hidden;
+    display: flex;
+}
+
+
+.contact{
+    width:100vw;
+    overflow:hidden;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.contactHero{
+position: relative;
+width: 100%;
+height: 60vh;
+background-image: url('../../assets/con5.jfif');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+overflow-x: hidden;
+}
+
+.contactHero::before {
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../../assets/map.jpg');
+    opacity:.3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.textt-holder{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cont-left{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.form-container{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input2{
+    width:100%;
+    margin-bottom:10px;
+    padding:6px 2px;
+    outline:none;
+    border-bottom:1px solid gray;
+}
+
+.textarea{
+    width: 100%;
+    height:30vh;
+    margin-bottom: 10px;
+    padding: 6px 2px;
+    outline: none;
+    border: 1px solid gray;
+    max-height:40vh;
+}
+
+.cont-right{
+    width: 50%;
+    padding:0 60px;
+        display: flex;
+        flex-direction: column;
+}
+
+@media screen and (max-width:711px){
+    .contact-con{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+
+        .cont-left{
+        width:90%;
+        margin-left: -4px;
+    }
+        .cont-right{
+            margin-top: 10px;
+        width: 90%;
+        padding: 0 0;
+        }
+}

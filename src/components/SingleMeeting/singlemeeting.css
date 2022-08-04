@@ -1,0 +1,21 @@
+.singleMeeting{
+    width:300px;
+    height:370px;
+    padding-bottom:4px;
+    overflow:hidden;
+    box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.51);
+        -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.51);
+        -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.51);
+}
+
+.singleMeetingImg{
+    height:50%;
+    width:100%;
+    object-fit:cover;
+}
+
+@media screen and (max-width:640px){
+    .singleMeeting{
+        width:90%;
+    }
+}

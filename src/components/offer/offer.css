@@ -1,0 +1,103 @@
+.offer{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/bg-main.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+}
+
+.btn-control{
+    background-color: #eeee;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    box-shadow: 2px -3px 6px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px -3px 6px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px -3px 6px -3px rgba(0, 0, 0, 0.75);
+}
+
+.l-btn{
+    position: absolute;
+        top: 50%;
+        left:10px;
+}
+
+.r-btn{
+    position: absolute;
+        top: 50%;
+        right: 10px;
+}
+
+.o-carousel{
+    width:200vw;
+    
+    transition:all ease 1s;
+}
+
+.i-carousel{
+    width:100vw;
+}
+
+.ac-container{
+    width:400px;
+    overflow: hidden;
+}
+
+.ac-container img{
+width:100%;
+height:50%;
+object-fit:cover;
+}
+
+.left-btn{
+    background: white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.right-btn{
+        background: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-left: 10px;
+        cursor:pointer;
+}
+
+.show{
+    display: none;
+}
+
+@media screen and (max-width:780px){
+    .adjust{
+        flex-wrap:wrap;
+    }
+    .ac-container{
+        width:90%;
+        height:auto;
+    }
+    .show{
+        display: flex;
+    }
+    .btn-control{
+        display:none;
+    }
+}

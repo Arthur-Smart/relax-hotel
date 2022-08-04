@@ -1,0 +1,79 @@
+.accomodation{
+    position: relative;
+    width:100%;
+    height:62.5vh;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 35%), url('../../assets/con1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+   
+}
+
+.show-Reg{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.details-holder{
+padding:10px 20px;
+width:60%;
+border-radius:10px;
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+background-color: rgb(219, 219, 219);
+}
+
+.h3{
+    color:#333;
+}
+
+.input-fields{
+    width: 100%;
+    border-radius:5px;
+    outline:none;
+    margin-top: 40px;
+    padding:7px 15px;
+}
+
+.reg-btn{
+    width:100%;
+}
+
+.accod-detail-holder{
+    width:70%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width:1240px){
+    .accomodation{
+        height:80vh;
+    }
+        .accod-detail-holder {
+            width: 90%;
+        }
+}
+
+@media screen and (max-width:660px){
+.details-holder{
+    width:90%;
+}
+}
+
+@media screen and (max-width:530px){
+    .accomodation {
+            height: 60vh;
+        }
+    .hide-option{
+        display: none;
+    }
+}

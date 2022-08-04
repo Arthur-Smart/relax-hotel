@@ -1,0 +1,9 @@
+.dinning-prep{
+    width:100%;
+    height:40vh;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/bg-main.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+}

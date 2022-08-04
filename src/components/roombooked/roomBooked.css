@@ -1,0 +1,201 @@
+.roomBooked{
+width:100vw;
+overflow:hidden;
+margin-top:80px;
+}
+.roomroot{
+overflow: hidden;
+}
+
+.info-holder{
+    width:100%;
+}
+
+.holder{
+    width:80%;
+
+}
+
+.roomImgContainer{
+    width:100%;
+    height:55vh;
+    overflow: hidden;
+    z-index:-2;
+}
+
+.roomImage{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.date{
+    position: absolute;
+    top:53px;
+    right:40%;
+}
+
+.details-holdler{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.roomPic{
+    position: relative;
+    width:400px;
+    height:300px;
+    overflow:hidden;
+    
+}
+
+.overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+    display:none;
+    transition: all ease 3s;
+
+}
+
+.roomPic:hover .overlay{
+display:block;
+}
+
+.roomPic img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.book-info{
+    margin-top:5px;
+    width:100%;
+    background-color: teal;
+}
+
+.cont-left{
+    width:40%;
+    margin-left: -20px;
+}
+
+.cont-right{
+    width:50%;
+    margin-left: -20px;
+}
+
+.personal-details{
+    width:100%;
+}
+
+.input{
+    border-bottom:1px solid grey;
+    outline:none;
+}
+
+.cont{
+    z-index: 5;
+}
+
+.options{
+    position:absolute;
+    top:50px;
+    background-color:white;
+    color:gray;
+    border-radius:5px;
+}
+
+.optionItem{
+    width:200px;
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+    z-index: 5;
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.optionCounterButton{
+    width:30px;
+    height:30px;
+    border:1px solid teal;
+
+}
+
+.optionCounterButton:disabled{
+    cursor:not-allowed;
+}
+
+.holderss{
+    padding:4px 10px;
+    bottom:25px;
+    left:0;
+    width:100%;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+    background-color: #fff;
+    color:teal;
+    font-weight: bold;
+}
+
+@media screen and (max-width:820px){
+    .main2{
+        flex-direction:column;
+        width:100%;
+    }
+    .cont-left{
+        width:100%;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .features{
+        text-align: center;
+    }
+
+    .cont-right {
+            width: 100%;
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                .input{
+                    width:100%;
+                }
+}
+
+@media screen and (max-width:627px){
+    .title{
+        display: none;
+    }
+        .date {
+            right: 7%;
+        }
+    
+        .options {
+            right: 22%;
+        }
+}
+
+@media screen and (max-width:500px){
+
+.holderss{
+    display: block;
+}
+.roomPic{
+    width:90%;
+    margin-left: -10px;
+}
+ .cont-right{
+    margin-left: 0;
+ }
+}

@@ -1,0 +1,24 @@
+.testimonials{
+   background-color: #eeee;;
+}
+
+.t-container{
+    width:400px;
+   
+}
+
+.t-image{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow: 2px 2px 9px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 2px 9px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 2px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.t-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}

@@ -1,0 +1,9 @@
+.blief{
+    width:100%;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/bg-main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+

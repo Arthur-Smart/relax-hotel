@@ -1,0 +1,36 @@
+.hero--container{
+    margin-top:50px;
+    width:100%;
+    height:60vh;
+    background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/bg-main.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    animation: change 25s infinite linear alternate;
+    overflow-y:hidden;
+}
+
+@keyframes change {
+    0%{
+        background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/change-1.jpg');
+        background-attachment: fixed;
+    }
+    20%{
+        background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/change-2.jpg');
+        background-attachment: fixed;
+    }
+    40% {
+            background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/change-3.jpg');
+        }
+    60% {
+        background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/bg-main.jpg');
+        background-attachment: fixed;
+    }
+    80% {
+        background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/change-1.jpg');
+    }
+    100% {
+        background-image: linear-gradient(to left, transparent 0%, rgba(0, 171, 240, .9) 45%), url('../../assets/change-1.jpg');
+        background-attachment: fixed;
+    }
+}

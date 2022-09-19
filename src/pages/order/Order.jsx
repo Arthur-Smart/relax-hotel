@@ -33,7 +33,7 @@ const Order = () => {
     setInvoiceNo(invoiceRef);
     try {
     
-   const madeOrder = await axios.post('https://relaxhotel.herokuapp.com/order', {
+   const madeOrder = await axios.post('https://relaxhotel.herokuapp.com/api/order', {
    qty,
    title,
    deliver,

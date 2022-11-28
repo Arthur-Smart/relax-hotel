@@ -62,7 +62,7 @@ function RoomBooked() {
     if(!name || !email || !phone || !country ){
       alert('Please fill all the fields')
     } else {
-           const savedRoom =  await axios.post('https://hotel-web-api.onrender.com//api/booking', {
+           const savedRoom =  await axios.post('https://hotel-web-api.onrender.com/api/booking', {
           name,
           email,
           roomTitle,
@@ -80,9 +80,9 @@ function RoomBooked() {
  }
 
  const generateInvoice = () =>{
-  axios.post('https://hotel-web-api.onrender.com//api/create-room-pdf', {
+  axios.post('https://hotel-web-api.onrender.com/api/create-room-pdf', {
       name,  roomTitle, email, phone,  country,  totalPrice,  identificationcard,  days, invoiceNo
-    }).then(() => axios.get('https://hotel-web-api.onrender.com//api/room-invoice', {responseType:'bolb'})).then((res) => {
+    }).then(() => axios.get('https://hotel-web-api.onrender.com/api/room-invoice', {responseType:'bolb'})).then((res) => {
       const pdfBlob = new Blob([res.data], {type:'application/pdf'})
       saveAs(pdfBlob, 'Relax Invoce.pdf')
     });

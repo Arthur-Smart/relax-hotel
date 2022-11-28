@@ -33,7 +33,7 @@ const Order = () => {
     setInvoiceNo(invoiceRef);
     try {
     
-   const madeOrder = await axios.post('https://relaxhotel.herokuapp.com/api/order', {
+   const madeOrder = await axios.post('https://hotel-web-api.onrender.com/api/order', {
    qty,
    title,
    deliver,
@@ -51,9 +51,9 @@ const Order = () => {
  
   const getInvoice = () => {
     
-    axios.post('https://relaxhotel.herokuapp.com/api/create-pdf', {
+    axios.post('https://hotel-web-api.onrender.com/api/create-pdf', {
       qty,deliver,title,name,total,invoiceNo
-    }).then(() => axios.get('https://relaxhotel.herokuapp.com/api/relax-invoice', {responseType:'bolb'})).then((res) => {
+    }).then(() => axios.get('https://hotel-web-api.onrender.com/api/relax-invoice', {responseType:'bolb'})).then((res) => {
       const pdfBlob = new Blob([res.data], {type:'application/pdf'})
       saveAs(pdfBlob, 'Relax Invoce.pdf')
     })

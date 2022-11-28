@@ -27,7 +27,7 @@ export default function PrepDialog() {
       setError(true);
      
     } else {
-      axios.post('https://relaxhotel.herokuapp.com/api/dinning', {
+      axios.post('https://hotel-web-api.onrender.com//api/dinning', {
       email,
       number,
       text

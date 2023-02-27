@@ -74,11 +74,7 @@ function RoomBooked() {
           date,
           invoiceNo  
          });
-      setName ="";
-      setEmail ="";
-      setPhone ="";
-      setCountry ="";
-      setIdentificationcard ="";
+      
       setComplete(true);
     }
  }
@@ -90,11 +86,11 @@ function RoomBooked() {
       const pdfBlob = new Blob([res.data], {type:'application/pdf'})
       saveAs(pdfBlob, 'Relax Invoce.pdf')
     });
-     setName('')
-       setEmail('')
-       setPhone('')
-       setCountry('')
-       setIdentificationcard('')
+     setName ="";
+      setEmail ="";
+      setPhone ="";
+      setCountry ="";
+      setIdentificationcard ="";
  }
   
 

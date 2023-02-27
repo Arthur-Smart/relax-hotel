@@ -186,34 +186,25 @@ function RoomBooked() {
   </div>
 </div>
 {/*Booking and Info */}
-<div className='book-info flex flex-wrap items-center justify-center py-2'>
-  <div className='container main2 flex'>
-    <div className='cont-right text-white'>
-      <p className='text-xl font-semibold mb-4'>Personal Details</p>
-      <div className='personal-details flex justify-center flex-col'>
-        <input className='mb-7 bg-transparent input' placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)}/>
-        <input className='mb-7 bg-transparent input' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
-        <input className='mb-7 bg-transparent input' placeholder='Enter Phone' value={phone} onChange={(e) => setPhone(e.target.value)}/>
-        <input className='mb-7 bg-transparent input' placeholder='From eg. Netherlands' value={country} onChange={(e) => setCountry(e.target.value)}/>
-        <input className='mb-7 bg-transparent input' placeholder='Enter Id' value={identificationcard} onChange={(e) => setIdentificationcard(e.target.value)}/>
-      </div>
-      <span className='flex text-lime-500'>
-      <input type='checkbox'/>
-      <p className='ml-2'>Make online M-pesa payments(Optional)</p>
-      </span>
-      {
+<div className='book-info flex items-center justify-center p-3'>
+    <div className='container'>
+        <p className='text-xl font-semibold  text-center text-white'>Personal Details</p>
+        <p className=' font-medium mb-4 text-center text-white'>Hello client. Please make sure you have filled all the fields below</p>
+        <input className='mb-7 bg-transparent text-white booking-input' placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)}/>
+        <input className='mb-7 bg-transparent text-white booking-input' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
+        <input className='mb-7 bg-transparent text-white booking-input' placeholder='Enter Phone' value={phone} onChange={(e) => setPhone(e.target.value)}/>
+        <input className='mb-7 bg-transparent text-white booking-input' placeholder='From eg. Netherlands' value={country} onChange={(e) => setCountry(e.target.value)}/>
+        <input className='mb-7 bg-transparent text-white booking-input' placeholder='Enter Id' value={identificationcard} onChange={(e) => setIdentificationcard(e.target.value)}/>
+        {
         complete &&  <p>Conglaturations! You have booked a room successfully. Get your invoice below. <b>We are happly waiting for you</b></p>
       }
      
       {
-        !complete ? <button className='bg-orange-600 w-80 py-3 px-7 text-white rounded-md text-xl' onClick={handleBooking}>Make Reservation</button> :
-         <button className='bg-orange-500  w-80 py-3 px-7 text-white rounded-md text-xl' onClick={generateInvoice}>Get Invoice</button>
+        !complete ? <button className='bg-orange-600 w-80 py-3 px-7 text-white  rounded-md text-xl' onClick={handleBooking}>Make Reservation</button> :
+         <button className='bg-orange-500  w-80 py-3 px-7 text-white rounded-md  text-xl' onClick={generateInvoice}>Get Invoice</button>
       }
-      
-      
     </div>
-  </div>
-</div>
+</div>      
 <Footer/>
     </div>
     </div>

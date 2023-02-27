@@ -95,7 +95,7 @@ function RoomBooked() {
   
 
   return (
-    <div className='roomroot'>
+    <div className='roomroot flex flex-col items-center justify-center'>
     <div className='roomBooked flex flex-col '>
         <div className='roomImgContainer relative'>
         <img className='roomImage absolute' src={room.img1} alt='' />

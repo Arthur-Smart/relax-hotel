@@ -16,9 +16,9 @@ function HeroAccomodation() {
      <div onClick={() => setShow(false)} className='mb-7 text-white cursor-pointer'><i class="fa-solid fa-circle-xmark fa-2x"></i></div>
      <div className='details-holder'>
       <h3 className='text-2xl font-bold h3' >Fill in your details</h3>
-      <input className='input-fields' type='text' placeholder='Enter Name'/>
-      <input className='input-fields' type='text' placeholder='Enter Email'/>
-      <input className='input-fields' type='text' placeholder='Enter Phone Number'/>
+      <input className='input-fields border-2' type='text' placeholder='Enter Name'/>
+      <input className='input-fields border-2' type='text' placeholder='Enter Email'/>
+      <input className='input-fields border-2' type='text' placeholder='Enter Phone Number'/>
        <button onClick={() =>setShow(false)} className='bg-white reg-btn self-center mt-7 mx-2 px-7 py-3 text-md rounded-md bg-orange-400  text-white '>Register now</button>
       </div>
      </div>)

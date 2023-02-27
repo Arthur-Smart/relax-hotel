@@ -33,7 +33,7 @@ const Order = () => {
     setInvoiceNo(invoiceRef);
     try {
     
-   const madeOrder = await axios.post('https://hotel-web-api.onrender.com/api/order', {
+   const madeOrder = await axios.post('https://hotel-web-api.onrender.com/api/food-order', {
    qty,
    title,
    deliver,

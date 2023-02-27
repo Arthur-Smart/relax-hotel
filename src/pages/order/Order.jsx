@@ -94,14 +94,6 @@ const Order = () => {
         <span>
            <p className='text-xl text-stone-400 font-bold'><span className='text-orange-500  font-bold'>Total:</span>Ksh {total}</p>
         </span>
-          <span className='flex items-center text-lg'>
-            <p className='mr-2 text-cyan-700'>Pay on Delivery</p>
-            <input type='checkbox'/>
-          </span>
-          <span className='flex items-center'>
-            <p className='mr-2 text-lime-600'>Lipa Na M-pesa</p>
-            <input  type='checkbox'/>
-          </span>
         </div>
        
       </div>

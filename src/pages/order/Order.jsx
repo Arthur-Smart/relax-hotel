@@ -92,7 +92,7 @@ const Order = () => {
        
         <div className='payments flex-col md:flex-row flex w-full items-center justify-between mt-4'>
         <span>
-           <p className='text-xl text-stone-400 font-bold'><span className='text-orange-500  font-bold'>Total:</span>Ksh {total}</p>
+           <p className='text-xl text-center text-stone-400 font-bold'><span className='text-orange-500  font-bold'>Total:</span>Ksh {total}</p>
         </span>
         </div>
        

@@ -74,11 +74,11 @@ function RoomBooked() {
           date,
           invoiceNo  
          });
-      setName = "";
-      setEmail = "";
-      setPhone = "";
-      setCountry = "";
-      setIdentificationcard = "";
+      setName ="";
+      setEmail ="";
+      setPhone ="";
+      setCountry ="";
+      setIdentificationcard ="";
       setComplete(true);
     }
  }
@@ -111,7 +111,7 @@ function RoomBooked() {
     <div className='info-holder flex justify-center -mt-7 '>
         <div className=' holder relative bg-white flex justify-between items-center border-orange-500 border-2 py-4 px-2 rounded-md'>
             <div className='cont title'>
-                <p className='text-zinc-500 text-xl'>{room.title}  <span className='text-lime-400'>Available</span></p>
+                <p className='text-zinc-500 text-xl'>{room.title}</p>
             </div>
 
             <div className='cont text-zinc-500 cursor-pointer ' onClick={() => setOpen(!open)}>

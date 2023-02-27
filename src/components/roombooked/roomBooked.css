@@ -1,5 +1,5 @@
 .roomBooked{
-width:100vw;
+width:100%;
 overflow:hidden;
 margin-top:80px;
 }
@@ -76,10 +76,7 @@ display:block;
     background-color: teal;
 }
 
-.cont-left{
-    width:40%;
-    margin-left: -20px;
-}
+
 
 .cont-right{
     width:100%;
@@ -89,9 +86,10 @@ display:block;
     width:100%;
 }
 
-.input{
-    border-bottom:1px solid grey;
-    outline:none;
+.booking-input {
+  width:100%;
+  border-bottom: 1px solid white;
+  outline: none;
 }
 
 .cont{

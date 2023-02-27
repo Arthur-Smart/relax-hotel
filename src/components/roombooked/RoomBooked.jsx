@@ -190,7 +190,7 @@ function RoomBooked() {
   </div>
 </div>
 {/*Booking and Info */}
-<div className='book-info flex flex-wrap items-center justify-center py-2'>
+<div className='book-info flex flex-wrap items-center  py-2'>
   <div className='container main2 flex'>
     <div className='cont-left'>
       <p className='text-xl font-semibold text-white mb-4'>Room features</p>

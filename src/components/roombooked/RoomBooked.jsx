@@ -186,20 +186,8 @@ function RoomBooked() {
   </div>
 </div>
 {/*Booking and Info */}
-<div className='book-info flex flex-wrap items-center  py-2'>
+<div className='book-info flex flex-wrap items-center justify-center py-2'>
   <div className='container main2 flex'>
-    <div className='cont-left'>
-      <p className='text-xl font-semibold text-white mb-4'>Room features</p>
-      <div className='features'>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p1}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p2}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p3}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p4}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p5}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p6}</p>
-        <p className='text-white text-lg mb-4'> <i class="fa-solid fa-hand-point-right text-orange-400 "></i> {room.p7}</p>
-      </div>
-    </div>
     <div className='cont-right text-white'>
       <p className='text-xl font-semibold mb-4'>Personal Details</p>
       <div className='personal-details flex justify-center flex-col'>

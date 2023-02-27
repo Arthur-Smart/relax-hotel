@@ -74,7 +74,11 @@ function RoomBooked() {
           date,
           invoiceNo  
          });
-          console.log(savedRoom.data);
+      setName = "";
+      setEmail = "";
+      setPhone = "";
+      setCountry = "";
+      setIdentificationcard = "";
       setComplete(true);
     }
  }

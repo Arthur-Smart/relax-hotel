@@ -72,19 +72,19 @@ const Order = () => {
        <div className='quantity flex-col md:flex-row flex mt-4  '>
           <p className='mr-6 text-stone-400 text-xl font-medium'>Name</p>
           <input placeholder='Enter name'
-          className='border-2 border-slate-400 outline-0 w-96 py-1 rounded-md md:ml-5'
+          className='border-2 border-slate-400 outline-0 w-96 py-1 px-2 rounded-md md:ml-5'
           type='text'
           onChange={(e) => setName(e.target.value)}  
           />
         </div>
         <div className='quantity flex-col md:flex-row flex mt-4'>
           <p className='mr-6 text-stone-400 text-xl font-medium '>Quantity</p>
-          <input placeholder='Enter quantity eg 1' min='1' value={qty} className='border-2 border-slate-400 outline-0 w-96 py-1 rounded-md' type='number' onChange={(e) => setQty(e.target.value)}/>
+          <input placeholder='Enter quantity eg 1' min='1' value={qty} className='border-2 border-slate-400 outline-0 w-96 py-1 px-2 rounded-md' type='number' onChange={(e) => setQty(e.target.value)}/>
         </div>
         <div className='quantity flex-col md:flex-row flex mt-4  '>
           <p className='mr-6 text-stone-400 text-xl font-medium'>Location</p>
           <input placeholder='Eg FreeArea'
-          className='border-2 border-slate-400 outline-0 w-96 py-1 rounded-md'
+          className='border-2 border-slate-400 outline-0 w-96 py-1 px-2 rounded-md'
           type='text'
           onChange={(e) => setDeliver(e.target.value)}  
           />
